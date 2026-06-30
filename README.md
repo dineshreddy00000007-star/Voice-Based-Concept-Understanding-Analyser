@@ -51,4 +51,18 @@ This platform is designed to support:
 
 - ⏱️ Session Tracking for User Engagement
 
-👉 In essence, the system provides a comprehensive pipeline: from audio input → transcription → analysis → evaluation → reporting, all tied to user sessions. It’s well-suited for applications like language learning platforms, communication training, or automated speech evaluation systems.
+----
+
+# 🧭 Project Flow Overview
+## Definition
+### Project Flow is the structured sequence of phases and tasks that guide a project from initiation to completion. It acts as a roadmap for teams to execute work efficiently, manage resources, and monitor progress toward objectives.
+----
+## Core Phases
+| Phase | Purpose |
+| --- | --- |
+| **1. Initiation** | Define goals, scope, and stakeholders. |
+| **2. Planning** | Outline tasks, timelines, and resource allocation. |
+| **3. Execution** | Implement project deliverables and monitor progress. |
+| **4. Monitoring & Control** | Track performance, manage risks, and ensure quality. |
+| **5. Closure** | Finalize deliverables, document outcomes, and review success. |
+
