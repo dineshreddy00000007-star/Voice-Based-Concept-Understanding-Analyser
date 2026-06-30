@@ -158,3 +158,34 @@ streamlit run app.py
 - Core modules tested without runtime errors.
 
 - Ready for development and deployment.
+-----
+# 📂 Project Structure
+
+
+vbcua_project/
+-------
+│
+├── app.py                  # Streamlit front-end & main application logic
+│
+├── audio_utils.py          # Audio loading & feature extraction utilities
+│
+├── speech_to_text.py       # Whisper-based transcription logic
+│
+├── semantic_eval.py        # Semantic similarity computation (Sentence-BERT)
+│
+├── scoring_engine.py       # Understanding score calculation & classification
+│
+├── report_generator.py     # PDF report generation (ReportLab)
+│
+├── requirements.txt        # Dependency list
+│
+├── tests/                  # Unit & integration tests
+│   ├── test_audio_utils.py
+│   ├── test_speech_to_text.py
+│   ├── test_semantic_eval.py
+│   ├── test_scoring_engine.py
+│   └── test_report_generator.py
+│
+└── data/                   # Sample audio files, transcripts, reports
+    ├── sample_audio.wav
+    └── reports/
