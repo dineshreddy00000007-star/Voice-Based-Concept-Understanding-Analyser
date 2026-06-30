@@ -65,4 +65,96 @@ This platform is designed to support:
 | **3. Execution** | Implement project deliverables and monitor progress. |
 | **4. Monitoring & Control** | Track performance, manage risks, and ensure quality. |
 | **5. Closure** | Finalize deliverables, document outcomes, and review success. |
+------
+#🛠️ Environment Setup & Validation
+-----
+## 1. Create a Dedicated Virtual Environment
+bash
+# Navigate to your project folder
+cd path/to/vbcua_project
 
+# Create virtual environment named vbcu_env
+python3 -m venv vbcu_env
+
+# Activate environment
+# On Linux/Mac:
+source vbcu_env/bin/activate
+# On Windows:
+vbcu_env\Scripts\activate
+-----
+## 2. Install Dependencies
+Make sure you have a requirements.txt file with all libraries listed:
+
+text
+streamlit
+openai-whisper
+sentence-transformers
+librosa
+soundfile
+matplotlib
+reportlab
+nltk
+Then install:
+
+bash
+pip install -r requirements.txt
+-----
+## 3. Verify Python Compatibility
+Check Python version:
+
+bash
+python --version
+✅ Must be 3.10+ (recommended: 3.10 or 3.11 for Whisper & Sentence‑BERT compatibility).
+------
+## 4. Test Imports
+Run a quick script (test_imports.py) to confirm modules load correctly:
+
+python
+import streamlit
+import whisper
+from sentence_transformers import SentenceTransformer
+import librosa
+import soundfile as sf
+import matplotlib
+import reportlab
+import nltk
+
+print("✅ All libraries imported successfully!")
+Execute:
+
+bash
+python test_imports.py
+-----
+## 5. Validate Core Components
+### - Speech Transcription (Whisper)
+
+python
+model = whisper.load_model("base")
+result = model.transcribe("sample_audio.wav")
+print(result["text"])
+Semantic Similarity (Sentence‑BERT)
+
+python
+model = SentenceTransformer('all-MiniLM-L6-v2')
+embeddings = model.encode(["Hello world", "Hi there"])
+print("✅ Semantic embeddings generated")
+-----
+### - Audio Feature Extraction (Librosa)
+
+python
+y, sr = librosa.load("sample_audio.wav")
+zcr = librosa.feature.zero_crossing_rate(y)
+print("Zero Crossing Rate:", zcr.mean())
+UI Rendering (Streamlit)
+
+bash
+streamlit run app.py
+-----
+# ✅ Outcome
+- Isolated environment (vbcu_env) ensures reproducibility.
+
+- All dependencies installed and verified.
+
+- Core modules tested without runtime errors.
+
+- Ready for development and deployment.
