@@ -66,7 +66,7 @@ This platform is designed to support:
 | **4. Monitoring & Control** | Track performance, manage risks, and ensure quality. |
 | **5. Closure** | Finalize deliverables, document outcomes, and review success. |
 ------
-#🛠️ Environment Setup & Validation
+# 🛠️ Environment Setup & Validation
 -----
 ## 1. Create a Dedicated Virtual Environment
 bash
