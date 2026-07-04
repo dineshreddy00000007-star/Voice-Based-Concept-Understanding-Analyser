@@ -161,31 +161,25 @@ streamlit run app.py
 -----
 # 📂 Project Structure
 
-
+```
 vbcua_project/
 -------
 │
-├── app.py                  # Streamlit front-end & main application logic
-│
-├── audio_utils.py          # Audio loading & feature extraction utilities
-│
-├── speech_to_text.py       # Whisper-based transcription logic
-│
-├── semantic_eval.py        # Semantic similarity computation (Sentence-BERT)
-│
-├── scoring_engine.py       # Understanding score calculation & classification
-│
-├── report_generator.py     # PDF report generation (ReportLab)
-│
-├── requirements.txt        # Dependency list
-│
-├── tests/                  # Unit & integration tests
+├── app.py
+├── audio_utils.py
+├── speech_to_text.py
+├── semantic_eval.py
+├── scoring_engine.py     
+├── report_generator.py 
+├── requirements.txt
+├── tests/
 │   ├── test_audio_utils.py
 │   ├── test_speech_to_text.py
 │   ├── test_semantic_eval.py
 │   ├── test_scoring_engine.py
 │   └── test_report_generator.py
 │
-└── data/                   # Sample audio files, transcripts, reports
+└── data/
     ├── sample_audio.wav
     └── reports/
+```
