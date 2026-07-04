@@ -20,7 +20,9 @@ A Voice-Based Concept Understanding Analyser is an AI system that converts speec
 - Report → Generated documents summarizing evaluation results.
 
 - Session → Tracks user activity and engagement periods.
+  
 ----
+
 # ⚙️ Technology Stack
 - Python → Core programming language
 
@@ -37,7 +39,9 @@ A Voice-Based Concept Understanding Analyser is an AI system that converts speec
 - ReportLab → Automated PDF report generation
 
 - Visual Studio Code → Development environment
+- 
 ----
+
 # 📚 Reference Links
 - Python
 
@@ -54,7 +58,9 @@ A Voice-Based Concept Understanding Analyser is an AI system that converts speec
 - ReportLab
 
 - Visual Studio Code
+  
 ---
+
 ## Key Relationships
 - Users upload audio files.
 
@@ -89,7 +95,9 @@ This platform is designed to support:
 # 🧭 Project Flow Overview
 ## Definition
 ### Project Flow is the structured sequence of phases and tasks that guide a project from initiation to completion. It acts as a roadmap for teams to execute work efficiently, manage resources, and monitor progress toward objectives.
+
 ----
+
 ## Core Phases
 | Phase | Purpose |
 | --- | --- |
@@ -98,7 +106,9 @@ This platform is designed to support:
 | **3. Execution** | Implement project deliverables and monitor progress. |
 | **4. Monitoring & Control** | Track performance, manage risks, and ensure quality. |
 | **5. Closure** | Finalize deliverables, document outcomes, and review success. |
+
 ------
+
 # 🛠️ Environment Setup & Validation
 -----
 ## 1. Create a Dedicated Virtual Environment
@@ -114,7 +124,9 @@ python3 -m venv vbcu_env
 source vbcu_env/bin/activate
  On Windows:
 vbcu_env\Scripts\activate
+
 -----
+
 ## 2. Install Dependencies
 Make sure you have a requirements.txt file with all libraries listed:
 
@@ -131,14 +143,17 @@ Then install:
 
 bash
 pip install -r requirements.txt
+
 -----
+
 ## 3. Verify Python Compatibility
 Check Python version:
 
 bash
-python --version
-✅ Must be 3.10+ (recommended: 3.10 or 3.11 for Whisper & Sentence‑BERT compatibility).
+python -version✅ Must be 3.10+ (recommended: 3.10 or 3.11 for Whisper & Sentence‑BERT compatibility).
+
 ------
+
 ## 4. Test Imports
 Run a quick script (test_imports.py) to confirm modules load correctly:
 
@@ -157,6 +172,7 @@ Execute:
 
 bash
 python test_imports.py
+
 -----
 ## 5. Validate Core Components
 ### - Speech Transcription (Whisper)
@@ -171,7 +187,9 @@ python
 model = SentenceTransformer('all-MiniLM-L6-v2')
 embeddings = model.encode(["Hello world", "Hi there"])
 print("✅ Semantic embeddings generated")
+
 -----
+
 ### - Audio Feature Extraction (Librosa)
 
 python
@@ -182,7 +200,9 @@ UI Rendering (Streamlit)
 
 bash
 streamlit run app.py
+
 -----
+
 # ✅ Outcome
 - Isolated environment (vbcu_env) ensures reproducibility.
 
@@ -192,6 +212,7 @@ streamlit run app.py
 
 - Ready for development and deployment.
 -----
+
 # 📂 Project Structure
 
 ```
