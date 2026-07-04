@@ -239,3 +239,51 @@ streamlit run app.py
   - Subjective analysis (AI-driven semantic similarity)
 
 - Generates evaluation results → later used in reports (Epic 3 & 4).
+-----
+# 🧠 Semantic Evaluation Workflow
+## 1. Generate Embeddings
+Use Sentence‑BERT to encode both the student’s explanation and the reference concept(s) into dense vector embeddings.
+
+python
+from sentence_transformers import SentenceTransformer
+
+# Load pre-trained Sentence-BERT model
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+# Example inputs
+student_explanation = "Photosynthesis is the process by which plants make food using sunlight."
+reference_concept = "Photosynthesis converts light energy into chemical energy in plants."
+
+# Generate embeddings
+student_embedding = model.encode(student_explanation)
+reference_embedding = model.encode(reference_concept)
+---- 
+## 2. Compute Cosine Similarity
+Cosine similarity quantifies how close the student’s explanation is to the reference concept.
+
+python
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+
+similarity_score = cosine_similarity(
+    [student_embedding],
+    [reference_embedding]
+)[0][0]
+
+print("Raw similarity score:", similarity_score)
+---- 
+## 3. Normalize Scores
+To ensure consistent interpretation across evaluations, normalize the similarity score to a 0–100 scale.
+
+python
+# Normalization: cosine similarity ranges from -1 to 1
+normalized_score = (similarity_score + 1) / 2 * 100
+print("Normalized similarity score:", round(normalized_score, 2))
+----
+#✅ Outcome
+Embeddings capture semantic meaning of both student and reference text.
+
+Cosine similarity provides a quantitative measure of conceptual alignment.
+
+Normalized scores make results interpretable and consistent across different evaluations (e.g., 0–100 scale for reporting).
+-----
