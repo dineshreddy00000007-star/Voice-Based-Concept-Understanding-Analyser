@@ -280,7 +280,7 @@ python
 normalized_score = (similarity_score + 1) / 2 * 100
 print("Normalized similarity score:", round(normalized_score, 2))
 ----
-#✅ Outcome
+# ✅ Outcome
 Embeddings capture semantic meaning of both student and reference text.
 
 Cosine similarity provides a quantitative measure of conceptual alignment.
