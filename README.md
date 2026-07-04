@@ -197,3 +197,45 @@ streamlit run app.py
 ### This will open a local server (usually at http://localhost:8501) in your browser.
 
 ----
+# 🧠 Epic 2 – Core Intelligence Flow
+## Modules & Flow
+## 1. Speech-to-Text (Whisper)
+
+- Input: Uploaded audio file
+
+- Output: Transcript text
+
+⬇️ feeds into both semantic analysis and scoring engine
+
+## 2. Semantic Similarity Engine (Sentence-BERT)
+
+- Input: Transcript + Reference Concepts
+
+- Output: Similarity scores (conceptual alignment)
+
+## 3. Audio Feature Extraction (Librosa)
+
+- Input: Raw audio file
+
+- Output: Deterministic metrics (pause ratio, RMS energy, zero-crossing rate)
+
+## 4. Scoring Engine
+
+- Combines semantic scores + audio metrics
+
+- Produces evaluation result:
+
+  - Overall score
+
+  - Understanding level (Strong / Moderate / Poor)
+
+  - Notes
+-----
+## Outcome
+- Hybrid evaluation pipeline:
+
+  - Objective metrics (deterministic audio features)
+
+  - Subjective analysis (AI-driven semantic similarity)
+
+-Generates evaluation results → later used in reports (Epic 3 & 4).
