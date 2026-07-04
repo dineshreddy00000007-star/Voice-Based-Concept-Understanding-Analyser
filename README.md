@@ -218,7 +218,6 @@ streamlit run app.py
 
 ```
 vbcua_project/
--------
 │
 ├── app.py
 ├── audio_utils.py
