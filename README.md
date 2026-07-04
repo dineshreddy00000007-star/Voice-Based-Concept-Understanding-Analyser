@@ -20,7 +20,40 @@ A Voice-Based Concept Understanding Analyser is an AI system that converts speec
 - Report → Generated documents summarizing evaluation results.
 
 - Session → Tracks user activity and engagement periods.
-  
+----
+# ⚙️ Technology Stack
+- Python → Core programming language
+
+- FastAPI → Backend API framework
+
+- Streamlit → Interactive web UI
+
+- Librosa → Audio feature extraction
+
+- Whisper → Speech‑to‑text transcription
+
+- Sentence‑BERT → Semantic similarity analysis
+
+- ReportLab → Automated PDF report generation
+
+- Visual Studio Code → Development environment
+----
+# 📚 Reference Links
+- Python
+
+- FastAPI
+
+- Streamlit
+
+- Librosa
+
+- Whisper
+
+- Sentence‑BERT
+
+- ReportLab
+
+- Visual Studio Code
 ---
 ## Key Relationships
 - Users upload audio files.
