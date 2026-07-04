@@ -242,15 +242,15 @@ vbcua_project/
 
 # 🚀 Launch Application
 ## Make sure your virtual environment (vbcu_env) is activated:
-
+```
 bash
 source vbcu_env/bin/activate   # Linux/Mac
 vbcu_env\Scripts\activate      # Windows
 Run the Streamlit app:
-
+```
 bash
 streamlit run app.py
-### This will open a local server (usually at http://localhost:8501) in your browser.
+#### This will open a local server (usually at http://localhost:8501) in your browser.
 
 ----
 # 🧠 Epic 2 – Core Intelligence Flow
@@ -340,7 +340,7 @@ print("Raw similarity score:", similarity_score)
 To ensure consistent interpretation across evaluations, normalize the similarity score to a 0–100 scale.
 
 python
-# Normalization: cosine similarity ranges from -1 to 1
+Normalization: cosine similarity ranges from -1 to 1
 normalized_score = (similarity_score + 1) / 2 * 100
 print("Normalized similarity score:", round(normalized_score, 2))
 
