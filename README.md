@@ -70,16 +70,16 @@ This platform is designed to support:
 -----
 ## 1. Create a Dedicated Virtual Environment
 bash
-# Navigate to your project folder
+ Navigate to your project folder
 cd path/to/vbcua_project
 
-# Create virtual environment named vbcu_env
+ Create virtual environment named vbcu_env
 python3 -m venv vbcu_env
 
-# Activate environment
-# On Linux/Mac:
+ Activate environment
+ On Linux/Mac:
 source vbcu_env/bin/activate
-# On Windows:
+ On Windows:
 vbcu_env\Scripts\activate
 -----
 ## 2. Install Dependencies
