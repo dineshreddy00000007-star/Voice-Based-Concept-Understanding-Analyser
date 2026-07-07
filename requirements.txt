@@ -2,7 +2,9 @@ streamlit
 openai-whisper
 sentence-transformers
 torch
+torchvision
 torchaudio
+transformers
 librosa
 soundfile
 numpy
@@ -11,4 +13,3 @@ reportlab
 nltk
 scikit-learn
 pandas
-pytest
