@@ -1,143 +1,47 @@
-# Voice-Based-Concept-Understanding-Analyser
+# 🎤 Voice-Based Concept Understanding Analyser (VBCUA)
 
-A Voice-Based Concept Understanding Analyser is an AI system that converts speech into text, interprets meaning using NLP, and extracts key ideas for better comprehension. It enables interactive learning, intent detection, and real-time feedback across education, business, and accessibility.
+## 📌 Overview
 
-# 📊 SystemOverview: Audio Evaluation & Analysis Platform
-## Main Entities
-- User → Represents individuals interacting with the system.
+The Voice-Based Concept Understanding Analyser (VBCUA) is an AI-powered web application that evaluates how effectively users explain conceptual topics through speech.
 
-- Audio File → Uploaded recordings linked to users.
+The application uses Speech-to-Text, Semantic Similarity Analysis, and Audio Feature Extraction to assess conceptual understanding, communication quality, and speaking fluency.
 
-- Transcript → Text generated from audio files.
+It is built using Python and Streamlit and integrates OpenAI Whisper, Sentence-BERT, Librosa, and ReportLab.
 
-- Audio Feature → Technical metrics extracted (pause ratio, energy, etc.).
-
-- Evaluation Result → Scores and qualitative assessments of audio.
-
-- Reference Concept → Benchmark concepts used for evaluation.
-
-- Semantic Similarity → Measures alignment between transcript and reference concepts.
-
-- Report → Generated documents summarizing evaluation results.
-
-- Session → Tracks user activity and engagement periods.
-  
-----
-
-# ⚙️ Technology Stack
-
-- Python → Core programming language
-- FastAPI → Backend API framework
-- Streamlit → Interactive web UI
-- Librosa → Audio feature extraction
-- Whisper → Speech‑to‑text transcription
-- Sentence‑BERT → Semantic similarity analysis
-- ReportLab → Automated PDF report generation
-- Visual Studio Code → Development environment
-  
-----
-
-# 📚 Reference Links
-
-- Python
-- FastAPI
-- Streamlit
-- Librosa
-- Whisper
-- Sentence‑BERT
-- ReportLab
-- Visual Studio Code
-  
 ---
 
-## Key Relationships
-- Users upload audio files.
+## 🚀 Features
 
-- Each audio file can generate a transcript and audio features.
+- 🎙 Audio Upload (.wav/.mp3)
+- 📝 Speech-to-Text using OpenAI Whisper
+- 🧠 Semantic Similarity using Sentence-BERT
+- 📊 Audio Feature Extraction (Duration, RMS, Tempo, Pause Ratio)
+- 💬 Filler Word Detection
+- ⭐ AI-Based Scoring Engine
+- 📈 Waveform Visualization
+- 📄 PDF Report Generation
+- 💾 SQLite Database for Result Storage
+- 🌐 Interactive Streamlit Dashboard
 
-- Transcripts are analyzed for filler words and semantic similarity against reference concepts.
+---
 
-- Audio files are evaluated to produce results (scores, understanding levels, notes).
+## 🛠 Technologies Used
 
-- Results are compiled into reports for users.
+- Python
+- Streamlit
+- OpenAI Whisper
+- Sentence-Transformers
+- Librosa
+- NumPy
+- Matplotlib
+- ReportLab
+- SQLite
+- Torch
+- NLTK
 
-- Sessions track user activity across uploads and evaluations,
-----
+---
 
-## System Purpose
-This platform is designed to support:
-
-- 🎙️ Audio Upload & Management
-
-- 📝 Speech Transcription
-
-- 🔍 Semantic Analysis & Concept Matching
-
-- 📈 Understanding Assessment & Scoring
-
-- 📑 Report Generation
-
-- ⏱️ Session Tracking for User Engagement
-
-----
-
-## Core Phases
-| Phase | Purpose |
-| --- | --- |
-| **1. Initiation** | Define goals, scope, and stakeholders. |
-| **2. Planning** | Outline tasks, timelines, and resource allocation. |
-| **3. Execution** | Implement project deliverables and monitor progress. |
-| **4. Monitoring & Control** | Track performance, manage risks, and ensure quality. |
-| **5. Closure** | Finalize deliverables, document outcomes, and review success. |
-
-------
-
-# 🛠️ Environment Setup & Validation
------
-## 1. Create a Dedicated Virtual Environment
-bash
- Navigate to your project folder
-cd path/to/vbcua_project
-
- Create virtual environment named .venv
-python3 -m venv .venv
-
- Activate environment
- On Linux/Mac:
-source .venenv/bin/activate
- On Windows:
-.venv\Scripts\activate
-
------
-
-## 2. Install Dependencies
-Make sure you have a requirements.txt file with all libraries listed:
-
-text
-streamlit
-openai-whisper
-sentence-transformers
-librosa
-soundfile
-matplotlib
-reportlab
-nltk
-Then install:
-
-bash
-pip install -r requirements.txt
-
------
-
-## 3. Verify Python Compatibility
-Check Python version:
-
-bash
-python -version✅ Must be 3.10+ (recommended: 3.10 or 3.11 for Whisper & Sentence‑BERT compatibility).
-
------
-
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
 Voice-Based-Concept-Understanding-Analyser/
@@ -163,10 +67,100 @@ Voice-Based-Concept-Understanding-Analyser/
 ├── outputs/
 └── assets/
 ```
+
+---
+
+## ⚙ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/dineshreddy00000007-star/Voice-Based-Concept-Understanding-Analyser.git
+
+cd Voice-Based-Concept-Understanding-Analyser
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶ Run the Project
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+---
+
+## 📋 Usage
+
+1. Select a concept.
+2. Upload an audio file.
+3. Click **Analyze**.
+4. View:
+   - Transcript
+   - Semantic Similarity Score
+   - Audio Features
+   - Filler Word Analysis
+   - Final Score
+   - Feedback
+5. Download the generated PDF report.
+
+---
+
+## 📊 Workflow
+
+```
+Audio Upload
+      │
+      ▼
+Audio Preprocessing
+      │
+      ▼
+Speech-to-Text (Whisper)
+      │
+      ▼
+Semantic Similarity (Sentence-BERT)
+      │
+      ▼
+Audio Feature Extraction
+      │
+      ▼
+Filler Word Detection
+      │
+      ▼
+Scoring Engine
+      │
+      ▼
+PDF Report & Dashboard
+```
+
+---
+
+## 📸 Screenshots
+
+## screenshots:
+### Home Page
+- <img width="1843" height="977" alt="Screenshot 2026-07-07 063700" src="https://github.com/user-attachments/assets/06019753-6b74-472c-abb2-c32f219888d7" />
+### Audio Upload
+<img width="1813" height="790" alt="Screenshot 2026-07-07 065608" src="https://github.com/user-attachments/assets/7ba46d2e-4ba2-40eb-b81a-2cbe3d9cc4ad" />
+### Analysis Results
+<img width="1812" height="887" alt="Screenshot 2026-07-07 065742" src="https://github.com/user-attachments/assets/d2d5ad0c-d95f-410b-9576-aba50d41975e" />
+### Waveform
+<img width="1828" height="862" alt="Screenshot 2026-07-07 060654" src="https://github.com/user-attachments/assets/9104b131-1b7b-4d24-8cd5-0a6533f0d684" />
+- PDF Report
+<img width="1601" height="965" alt="Screenshot 2026-07-07 070001" src="https://github.com/user-attachments/assets/17d21d91-d1d4-4dbb-9d5c-38d85198873f" />
+
 ----
 
 # 🚀 Launch Application
-## Make sure your virtual environment (vbcu_env) is activated:
+## Make sure your virtual environment (.venv) is activated:
 ```
 bash
 source .venv/bin/activate   # Linux/Mac
@@ -178,14 +172,8 @@ streamlit run app.py
 #### This will open a local server (usually at http://localhost:8501) in your browser.
 
 ----
-# User Interface
-<img width="1843" height="977" alt="Screenshot 2026-07-07 063700" src="https://github.com/user-attachments/assets/7c354bd2-a531-4a48-b11d-84b5296c9f73" />
-
-# Sample output
-<img width="1828" height="862" alt="Screenshot 2026-07-07 060654" src="https://github.com/user-attachments/assets/ce1c1cb6-bdbe-4de3-aa53-9f19429b85a6" />
-
-----
-# 👨‍💻 Team Members
+#  ** Voice-Based Concept Understanding Analyser (VBCUA) Project **
+## 👨‍💻 Team Members
 ```
 Baddi Chetan
 Chilekam Palli Ganga Dinesh Reddy (Team Lead)
@@ -194,6 +182,22 @@ Dokka Likhitha
 Meruva Subha Sankar
 ```
 -----
+
+
+## 📄 License
+
+This project is developed for educational purposes as part of the Google Cloud Generative AI Skill Wallet program.
+
+---
+
+## 🙏 Acknowledgements
+
+- OpenAI Whisper
+- Sentence-Transformers
+- Streamlit
+- Librosa
+- ReportLab
+- Google Cloud Generative AI Skill Wallet
 
 
 
