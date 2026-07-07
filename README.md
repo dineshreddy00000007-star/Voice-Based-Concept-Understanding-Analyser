@@ -99,14 +99,14 @@ bash
  Navigate to your project folder
 cd path/to/vbcua_project
 
- Create virtual environment named vbcu_env
-python3 -m venv vbcu_env
+ Create virtual environment named .venv
+python3 -m venv .venv
 
  Activate environment
  On Linux/Mac:
-source vbcu_env/bin/activate
+source .venenv/bin/activate
  On Windows:
-vbcu_env\Scripts\activate
+.venv\Scripts\activate
 
 -----
 
@@ -178,16 +178,21 @@ streamlit run app.py
 #### This will open a local server (usually at http://localhost:8501) in your browser.
 
 ----
+# User Interface
+<img width="1843" height="977" alt="Screenshot 2026-07-07 063700" src="https://github.com/user-attachments/assets/7c354bd2-a531-4a48-b11d-84b5296c9f73" />
+
 # Sample output
 <img width="1828" height="862" alt="Screenshot 2026-07-07 060654" src="https://github.com/user-attachments/assets/ce1c1cb6-bdbe-4de3-aa53-9f19429b85a6" />
 
 ----
-# Team Members
+# 👨‍💻 Team Members
+```
 Baddi Chetan
 Chilekam Palli Ganga Dinesh Reddy (Team Lead)
 Eragamreddy Kousalya
 Dokka Likhitha
 Meruva Subha Sankar
+```
 -----
 
 
