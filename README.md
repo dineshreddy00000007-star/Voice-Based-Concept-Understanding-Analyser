@@ -143,18 +143,25 @@ PDF Report & Dashboard
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-## screenshots:
-### Home Page
-- <img width="1843" height="977" alt="Screenshot 2026-07-07 063700" src="https://github.com/user-attachments/assets/06019753-6b74-472c-abb2-c32f219888d7" />
-### Audio Upload
+## Home Page
+<img width="1813" height="977" alt="Screenshot 2026-07-07 063700" src="https://github.com/user-attachments/assets/06019753-6b74-472c-abb2-c32f219888d7" />
+
+## Audio Upload
+
 <img width="1813" height="790" alt="Screenshot 2026-07-07 065608" src="https://github.com/user-attachments/assets/7ba46d2e-4ba2-40eb-b81a-2cbe3d9cc4ad" />
-### Analysis Results
-<img width="1812" height="887" alt="Screenshot 2026-07-07 065742" src="https://github.com/user-attachments/assets/d2d5ad0c-d95f-410b-9576-aba50d41975e" />
-### Waveform
-<img width="1828" height="862" alt="Screenshot 2026-07-07 060654" src="https://github.com/user-attachments/assets/9104b131-1b7b-4d24-8cd5-0a6533f0d684" />
-- PDF Report
+
+## Analysis Results
+
+<img width="1813" height="887" alt="Screenshot 2026-07-07 065742" src="https://github.com/user-attachments/assets/d2d5ad0c-d95f-410b-9576-aba50d41975e" />
+
+## Waveform
+
+<img width="1812" height="862" alt="Screenshot 2026-07-07 060654" src="https://github.com/user-attachments/assets/9104b131-1b7b-4d24-8cd5-0a6533f0d684" />
+
+## PDF Report
+
 <img width="1601" height="965" alt="Screenshot 2026-07-07 070001" src="https://github.com/user-attachments/assets/17d21d91-d1d4-4dbb-9d5c-38d85198873f" />
 
 ----
@@ -197,7 +204,4 @@ This project is developed for educational purposes as part of the Google Cloud G
 - Streamlit
 - Librosa
 - ReportLab
-- Google Cloud Generative AI Skill Wallet
-
-
-
+- Google Cloud Generative AI Skill Wallet.
